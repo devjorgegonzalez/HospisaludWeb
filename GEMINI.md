@@ -5,9 +5,12 @@ Este documento sirve como la única fuente de verdad (Single Source of Truth) pa
 ## 1. Visión General
 Plataforma e-commerce para una red de farmacias con 4 sucursales (Hospital, Centro, Petrucci, Guanipa). La plataforma permite a los usuarios buscar medicamentos, verificar disponibilidad en tiempo real por sede y realizar pedidos para Pickup o Delivery, gestionando inventarios separados pero un catálogo unificado.
 
-## 2. Stack Tecnológico
+## 2. Stack Tecnológico & Infraestructura Local
 - **Framework:** Next.js (App Router, Server Actions)
-- **Base de Datos:** PostgreSQL
+- **Base de Datos:** PostgreSQL 16+
+- **Contenedores & Despliegue Local (Docker):**
+  - **Servicio Web (Next.js):** Puerto expuesto **`9241`** (`http://localhost:9241`)
+  - **Servicio Base de Datos (PostgreSQL):** Puerto expuesto **`9242`** (`localhost:9242`)
 - **Autenticación:** 📌 [PENDIENTE DEFINICIÓN]
 - **Procesamiento de Imágenes:** Conversión a WebP en frontend/backend (max 200kb de peso final).
 

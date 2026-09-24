@@ -38,3 +38,11 @@ Durante la interacción con el usuario, el modelo de IA debe asumir diferentes p
 - **Idioma del Código:** Nombres de variables, funciones y tablas en **Inglés**. Textos de cara al usuario en **Español**.
 - **Manejo de Errores:** Validaciones estrictas tanto en frontend como en el Server Action (backend).
 - **Agnosticismo:** Los módulos que aún no se han definido (como la Autenticación) deben dejarse aislados y modulares mediante interfaces/adaptadores genéricos.
+
+## 5. Entorno Local & Comandos Docker
+Para ejecutar y probar la aplicación localmente en contenedores:
+- **Levantar entorno completo:** `docker compose up -d`
+- **Servicio Web (Next.js):** `http://localhost:9241` (puerto host `9241` mapeado al puerto del contenedor)
+- **Servicio Base de Datos (PostgreSQL):** `localhost:9242` (puerto host `9242` mapeado a `5432`)
+- **Cadena de conexión DB:** `postgresql://postgres:postgres@localhost:9242/hospisalud`
+- **Detener entorno:** `docker compose down`
