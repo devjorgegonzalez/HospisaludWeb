@@ -30,18 +30,30 @@ flowchart TD
 
 ## 2. Fases de Implementación Detalladas
 
-### Fase 0: Bootstrap de Proyecto e Infraestructura de Datos
-*Objetivo: Inicializar el repositorio físico con Next.js y montar la base de datos PostgreSQL.*
+### Fase 0: Bootstrap de Proyecto, Infraestructura Docker y Base de Datos
+*Objetivo: Inicializar el repositorio físico con Next.js y orquestar el entorno local mediante Docker (Web en puerto 9241, PostgreSQL en puerto 9242).*
 
-1. **Inicialización de Next.js:**
+1. **Contenedores Docker para Desarrollo y Pruebas Locales:**
+   - Crear archivo `Dockerfile` multi-stage para Next.js.
+   - Crear archivo `docker-compose.yml` con los siguientes servicios y puertos fijos:
+     - **Servicio `db` (PostgreSQL 16):**
+       - Imagen: `postgres:16-alpine`
+       - Puertos: `"9242:5432"` (puerto host **9242** hacia el 5432 interno)
+       - Variables: `POSTGRES_USER=postgres`, `POSTGRES_PASSWORD=postgres`, `POSTGRES_DB=hospisalud`
+       - Volumen persistente: `hospisalud_pgdata:/var/lib/postgresql/data`
+     - **Servicio `web` (Next.js):**
+       - Puertos: `"9241:3000"` (puerto host **9241** hacia el 3000 interno)
+       - Variables: `DATABASE_URL=postgresql://postgres:postgres@db:5432/hospisalud`, `PORT=3000`
+       - Dependencia: `depends_on: [db]`
+2. **Inicialización de Next.js:**
    - Crear proyecto con `pnpm create next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias "@/*"`.
-2. **Dependencias Core:**
+3. **Dependencias Core:**
    - UI y Formularios: `lucide-react`, `zod`, `react-hook-form`, `@hookform/resolvers`, `clsx`, `tailwind-merge`.
    - Estado y Cache: `zustand`, `swr`, `cookies-next`.
    - Utilidades: `sharp` (compresión de imágenes), `date-fns` (fechas y tiempo de reserva).
    - Base de Datos: `drizzle-orm` + `postgres` (o `prisma` con cliente PostgreSQL).
-3. **Migración Inicial de Base de Datos:**
-   - Ejecutar el script DDL documentado en `docs/data-model.md`.
+4. **Migración Inicial de Base de Datos:**
+   - Conectar a `localhost:9242` y ejecutar el script DDL documentado en `docs/data-model.md`.
    - Ejecutar Seed con las 4 sucursales fijas obligatorias:
      - Hospital (Lat: 8.88720, Lng: -64.24560)
      - Centro (Lat: 8.89500, Lng: -64.25000)

@@ -3,6 +3,7 @@
 **Versión:** 1.0  
 **Fecha:** 2026-09-24  
 **Motor:** PostgreSQL 16+  
+**Puerto Local (Docker):** `9242` (`postgresql://postgres:postgres@localhost:9242/hospisalud`)  
 **Metodología:** Spec-Driven Development (SDD)  
 **Documento maestro:** [GEMINI.md](file:///h:/Repos/HospisaludWeb/GEMINI.md)
 
