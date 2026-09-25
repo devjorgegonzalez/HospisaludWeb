@@ -24,7 +24,8 @@
 
 ---
 
-## 3. Dependencias Nuevas
+## 3. Dependencias Nuevas & Componentes shadcn/ui
+- **Componentes shadcn/ui requeridos:** `Tabs`, `RadioGroup`, `Input`, `Label`, `Button`, `Alert`, `Card`, `Badge`, `Separator`.
 - `zod`: Esquema de validación estricto en frontend y backend para el formulario de checkout.
 - `react-hook-form` + `@hookform/resolvers`: Formularios de checkout con validación instantánea.
 

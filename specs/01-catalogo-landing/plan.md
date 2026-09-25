@@ -30,7 +30,8 @@
 
 ---
 
-## 3. Dependencias Nuevas
+## 3. Dependencias Nuevas & Componentes shadcn/ui
+- **Componentes shadcn/ui requeridos:** `Card`, `Badge`, `Button`, `Input`, `Select`, `Dialog`, `Slider` (rango de precios).
 - `sharp`: Procesamiento, redimensión y compresión a WebP en Node.js.
 - `lucide-react`: Iconografía para el buscador, badges médicos y filtros.
 - `embla-carousel-react`: Carrusel accesible y ligero para la sección de Ofertas.

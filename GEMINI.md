@@ -7,7 +7,8 @@ Plataforma e-commerce para una red de farmacias con 4 sucursales (Hospital, Cent
 
 ## 2. Stack Tecnológico & Infraestructura Local
 - **Framework:** Next.js (App Router, Server Actions)
-- **Base de Datos:** PostgreSQL 16+
+- **Componentes & UI:** `shadcn/ui` (Tailwind CSS, Radix UI Primitives, Lucide Icons)
+- **Base de Datos & ORM:** PostgreSQL 16+ con **TypeORM** (`pg`, `reflect-metadata`)
 - **Contenedores & Despliegue Local (Docker):**
   - **Servicio Web (Next.js):** Puerto expuesto **`9241`** (`http://localhost:9241`)
   - **Servicio Base de Datos (PostgreSQL):** Puerto expuesto **`9242`** (`localhost:9242`)

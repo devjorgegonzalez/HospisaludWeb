@@ -25,7 +25,8 @@
 
 ---
 
-## 3. Dependencias Nuevas
+## 3. Dependencias Nuevas & Componentes shadcn/ui
+- **Componentes shadcn/ui requeridos:** `Dialog`, `DropdownMenu`, `Button`, `Badge`.
 - `zustand`: Manejo de estado liviano para la sede y el carrito.
 - `cookies-next`: Sincronización transparente de cookies entre cliente y servidor.
 

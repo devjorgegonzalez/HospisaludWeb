@@ -24,7 +24,8 @@
 
 ---
 
-## 3. Dependencias Nuevas
+## 3. Dependencias Nuevas & Componentes shadcn/ui
+- **Componentes shadcn/ui requeridos:** `Card`, `Badge`, `Dialog`, `Button`, `ScrollArea`, `Tabs`, `Sonner`.
 - `swr`: Para revalidación periódica ligera en segundo plano en el tablero.
 
 ---

@@ -45,15 +45,20 @@ flowchart TD
        - Puertos: `"9241:3000"` (puerto host **9241** hacia el 3000 interno)
        - Variables: `DATABASE_URL=postgresql://postgres:postgres@db:5432/hospisalud`, `PORT=3000`
        - Dependencia: `depends_on: [db]`
-2. **Inicialización de Next.js:**
+2. **Inicialización de Next.js & shadcn/ui:**
    - Crear proyecto con `pnpm create next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias "@/*"`.
+   - Inicializar **`shadcn/ui`**: `pnpm dlx shadcn@latest init -d`.
+   - Instalar componentes base de shadcn necesarios: `button`, `card`, `badge`, `input`, `select`, `dialog`, `dropdown-menu`, `tabs`, `table`, `alert`, `form`, `label`, `sonner`.
 3. **Dependencias Core:**
-   - UI y Formularios: `lucide-react`, `zod`, `react-hook-form`, `@hookform/resolvers`, `clsx`, `tailwind-merge`.
+   - UI y Formularios: `shadcn/ui` (Radix UI primitives), `lucide-react`, `zod`, `react-hook-form`, `@hookform/resolvers`, `clsx`, `tailwind-merge`.
    - Estado y Cache: `zustand`, `swr`, `cookies-next`.
    - Utilidades: `sharp` (compresión de imágenes), `date-fns` (fechas y tiempo de reserva).
-   - Base de Datos: `drizzle-orm` + `postgres` (o `prisma` con cliente PostgreSQL).
-4. **Migración Inicial de Base de Datos:**
-   - Conectar a `localhost:9242` y ejecutar el script DDL documentado en `docs/data-model.md`.
+   - Base de Datos & ORM: **`typeorm`**, **`reflect-metadata`**, **`pg`**, `@types/pg`.
+4. **Configuración de TypeORM & Migración Inicial:**
+   - Configurar `src/lib/data-source.ts` con `DataSource` de TypeORM apuntando a `DATABASE_URL` (host: `localhost:9242` / docker: `db:5432`).
+   - Habilitar `experimentalDecorators` y `emitDecoratorMetadata` en `tsconfig.json`.
+   - Crear entidades TypeORM correspondientes al modelo (`Branch`, `Component`, `Product`, `BranchInventory`, `StockReservation`, `ExchangeRate`, `User`, `UserAddress`, `Order`, `OrderItem`, `OrderStatusLog`).
+   - Ejecutar script de inicialización o migración TypeORM para crear las tablas en PostgreSQL.
    - Ejecutar Seed con las 4 sucursales fijas obligatorias:
      - Hospital (Lat: 8.88720, Lng: -64.24560)
      - Centro (Lat: 8.89500, Lng: -64.25000)

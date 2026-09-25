@@ -23,7 +23,8 @@
 
 ---
 
-## 3. Dependencias Nuevas
+## 3. Dependencias Nuevas & Componentes shadcn/ui
+- **Componentes shadcn/ui requeridos:** `Card`, `Button`, `Table`, `Dialog`, `Input`, `Badge`, `Form`.
 - Ninguna dependencia adicional pesada requerida en esta fase.
 
 ---
