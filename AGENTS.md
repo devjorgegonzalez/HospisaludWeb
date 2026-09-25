@@ -92,8 +92,11 @@ src/
 
 ### 4.4 Capa de Presentación (`presentation/` y `app/`)
 * Los Server Actions invocan los casos de uso correspondientes y devuelven el objeto `Result` serializado.
-* Los componentes cliente utilizan Shadcn UI y Tailwind CSS.
-* Las tablas del panel administrativo utilizan **TanStack Table** con paginación y filtros en el cliente/servidor.
+* Los componentes cliente utilizan Shadcn UI y Tailwind CSS bajo un enfoque **Mobile-First Estricto**, garantizando que toda la interfaz sea 100% responsiva y accesible en pantallas táctiles móviles, tablets y escritorios.
+* La apariencia visual se rige por el sistema de diseño **"Clinical Precision"** detallado en `design/DESIGN.md`:
+  * Paleta: Deep Navy (`#2B3467`), Powder Sky Blue (`#BAD7E9`), Clinical Coral (`#EB455F`), Surface Ivory (`#FCFFE7`).
+  * Tipografías: `Plus Jakarta Sans` (títulos), `Inter` (cuerpo y formularios), `JetBrains Mono` (código de barras, tasas, SKUs).
+* Las tablas del panel administrativo utilizan **TanStack Table** con paginación, filtros en el cliente/servidor y vista adaptada para pantallas compactas (desplazamiento horizontal o vista de tarjetas en móviles).
 
 ---
 
@@ -114,5 +117,7 @@ Antes de considerar una tarea completada, el agente debe verificar:
 - [ ] ¿Se respetó el patrón de resultado (`Result.ok` / `Result.fail`) sin lanzar excepciones de negocio?
 - [ ] ¿La lógica de negocio se encuentra en el caso de uso y no en el Server Action ni en el componente?
 - [ ] ¿Los nombres de variables, métodos y tipos son descriptivos y coherentes?
+- [ ] ¿La interfaz desarrollada es 100% responsiva (Mobile-First) y se visualiza ergonómicamente en móviles, tablets y desktop?
+- [ ] ¿Los componentes de UI aplican los tokens del sistema 'Clinical Precision' (Deep Navy, Powder Blue, Clinical Coral, Surface Ivory) de design/DESIGN.md?
 - [ ] ¿Las pruebas de Vitest (`npm run test`) se ejecutan y pasan sin errores?
 - [ ] ¿Las entidades de TypeORM tienen sus respectivas migraciones generadas y no usan `synchronize: true`?

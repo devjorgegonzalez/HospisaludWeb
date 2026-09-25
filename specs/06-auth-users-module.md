@@ -20,6 +20,7 @@ El módulo de autenticación gestiona la identidad, seguridad y permisos para to
    * **Administrador de Sede:** Acceso exclusivo a su sede, ajuste de stock y tablas locales de ventas e incidencias.
    * **Operador de Despacho:** Tablero de despacho en vivo y verificación de pedidos de su sede asignada.
    * **Cliente:** Perfil, libreta de direcciones, historial de órdenes y seguimiento en vivo.
+3. `EARS-AUT-03`: El sistema debe ofrecer formularios de autenticación, libreta de direcciones y tablas de pedidos 100% responsivas, con inputs optimizados para dispositivos móviles (tipo `tel` y `numeric` para Cédula y Teléfono, teclado `email` para correo).
 
 ### 2.2 Requerimientos Impulsados por Eventos (Event-Driven)
 3. `EARS-AUT-03`: **Cuando** un usuario compra en modalidad de **Invitado (Guest Checkout)**, el sistema debe registrar el pedido asociando su Cédula, Nombre y Teléfono sin exigir la creación de contraseña.

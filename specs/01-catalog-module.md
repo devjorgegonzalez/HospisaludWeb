@@ -19,6 +19,7 @@ Incorpora la lógica de búsqueda predictiva ultrarrápida, el motor de recomend
 1. `EARS-CAT-01`: El sistema debe mantener un catálogo general de productos y una estructura de precios base en USD idéntica y sincronizada para todas las sucursales.
 2. `EARS-CAT-02`: El sistema debe almacenar y gestionar el nivel de stock físico de cada producto de manera numérica e independiente por cada una de las 4 sedes.
 3. `EARS-CAT-03`: El sistema debe almacenar para cada producto los metadatos completos: código de barras, nombre comercial, principio activo, laboratorio fabricante, subcategoría, presentación, concentración, vía de administración, tipo de venta (`VENTA_LIBRE` o `VENTA_CONTROLADA`), URL de imagen y precio en USD.
+4. `EARS-CAT-04`: El sistema debe renderizar la interfaz del catálogo, buscador, tarjetas de productos y modales de sustitutos en un diseño 100% responsivo adaptable a pantallas móviles (1 columna), tablets (2 columnas) y computadoras de escritorio (3 a 4 columnas), con elementos táctiles ergonómicos (mínimo 44x44 px).
 
 ### 2.2 Requerimientos Impulsados por Eventos (Event-Driven)
 4. `EARS-CAT-04`: **Cuando** el usuario ingresa un término de búsqueda en el buscador inteligente, el sistema debe ejecutar una coincidencia predictiva sobre el nombre comercial, principio activo o laboratorio, retornando resultados en menos de 100 ms.
@@ -101,7 +102,11 @@ src/modules/catalog/
         ├── SubstituteRecommendations.tsx
         ├── ControlledMedBadge.tsx
         └── AdminProductForm.tsx
-```
+
+> **Estilo Visual (Clinical Precision):**
+> * `ProductCard`: Canvas blanco (`#FFFFFF`) con micro-borde de 1px (`#E2E8F0`), títulos en *Plus Jakarta Sans*, SKU/código en *JetBrains Mono*, botones primarios en Deep Navy (`#2B3467`) y elevación sutil al pasar el cursor.
+> * `ControlledMedBadge`: Fondo suave coral (`rgba(235, 69, 95, 0.1)`), texto en Clinical Coral (`#EB455F`) y borde de 1px (`rgba(235, 69, 95, 0.3)`).
+> * `SubstituteRecommendations`: Panel contenedor en Surface Ivory (`#FCFFE7`) con borde Powder Blue (`#BAD7E9`) y tipografía en Deep Navy (`#2B3467`).
 
 ---
 

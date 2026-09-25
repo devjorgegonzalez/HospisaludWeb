@@ -21,6 +21,7 @@ Este módulo orquesta la experiencia transaccional central de **Hospisalud**. Ab
    * **Zona Urbana (Muy retirada):** $4.00 USD
    * **San Tomé:** $5.00 USD (tarifa especial)
 3. `EARS-ORD-03`: El sistema debe descontar/bloquear el inventario de la sede de forma atómica en el instante exacto en que el usuario presiona **"Confirmar Pedido"**, sin reservas previas mientras navega.
+4. `EARS-ORD-04`: El sistema debe ofrecer una interfaz de checkout 100% responsiva bajo enfoque Mobile-First: en pantallas móviles los bloques se apilan verticalmente, el mapa de Google Maps adopta controles táctiles y altura optimizada (ej. 280-320px), y el resumen con el botón de confirmación se mantiene accesible y ergonómico.
 
 ### 2.2 Requerimientos Impulsados por Eventos (Event-Driven)
 4. `EARS-ORD-04`: **Cuando** el usuario coloca o desplaza el pin en el mapa interactivo de Google Maps durante el checkout, el sistema debe calcular la zona poligonal correspondiente y actualizar en tiempo real la tarifa de delivery en el desglose de precios.
@@ -100,7 +101,13 @@ src/modules/orders/
         ├── PaymentMethodSelector.tsx
         ├── ControlledMedNotice.tsx
         └── OrderSuccessCard.tsx
-```
+
+> **Estilo Visual (Clinical Precision):**
+> * `CheckoutForm`: Inputs limpios en blanco (`#FFFFFF`) con bordes en `#CBD5E1`, anillo de enfoque de 2px en Deep Navy (`#2B3467`), y textos de asistencia en Inter 12px.
+> * `InteractiveGoogleMap`: Marco delimitador con micro-borde de 1px (`#E2E8F0`), esquinas de 8px, y polígonos translúcidos en Powder Blue (`#BAD7E9`) y Deep Navy (`#2B3467`).
+> * `PaymentMethodSelector`: Pestañas y tarjetas con micro-bordes; opción activa resaltada con borde Deep Navy y sutil tinte Powder Blue.
+> * `ControlledMedNotice`: Banner con fondo coral al 10% (`rgba(235, 69, 95, 0.1)`), borde en Clinical Coral (`#EB455F`) y casilla de verificación accesible.
+> * Botón de Confirmación: Deep Navy (`#2B3467`) sólido, texto blanco y esquina de 8px.
 
 ---
 

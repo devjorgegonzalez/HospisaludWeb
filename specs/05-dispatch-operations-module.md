@@ -18,6 +18,7 @@ Este módulo gobierna las operaciones internas en cada sucursal farmacéutica de
 2. `EARS-DSP-02`: El sistema debe realizar polling corto (TanStack Query cada 5 a 10 segundos) sobre los pedidos pendientes de verificación.
 3. `EARS-DSP-03`: El sistema debe reproducir una alerta sonora auditiva (*chime*) y una notificación visual cada vez que se detecte un nuevo pedido en estado `PENDIENTE_VERIFICACION`.
 4. `EARS-DSP-04`: El sistema debe presentar la comanda y lista de empaque de forma 100% digital en pantalla, sin requerir impresión de tickets térmicos desde la aplicación web.
+5. `EARS-DSP-05`: El sistema debe proveer una interfaz de despacho responsiva: en tablets y pantallas táctiles de mostrador, el tablero debe adaptar sus columnas mediante pestañas de estado o desplazamiento horizontal fluido, con botones táctiles de aprobación y rechazo de tamaño ergonómico (mínimo 44 px).
 
 ### 2.2 Requerimientos Impulsados por Eventos (Event-Driven)
 5. `EARS-DSP-05`: **Cuando** el operador verifica la validez del comprobante bancario o aprueba la orden en efectivo, el sistema debe cambiar el estado del pedido a `EN_PREPARACION` y registrar el usuario auditor.

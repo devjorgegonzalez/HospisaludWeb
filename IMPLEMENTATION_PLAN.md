@@ -30,11 +30,14 @@ Establecer el entorno contenerizado local con los puertos asignados y la base de
     3. `azurite`: Emulador de Azure Blob Storage exponiendo el puerto `9253:10000` con volumen `azuritedata`.
   * Crear `.env.example` y `.env.local` con las cadenas de conexión y puertos.
   * *Verificación:* Ejecutar `docker compose up -d` y validar conectividad a los puertos `9251`, `9252` y `9253`.
-- [ ] **0.2 Scaffolding Next.js (App Router):**
-  * Inicializar el proyecto con Next.js 14+ (App Router, TypeScript estricto, Tailwind CSS).
+- [ ] **0.2 Scaffolding Next.js (App Router) y Sistema de Diseño Responsivo ("Clinical Precision"):**
+  * Inicializar el proyecto con Next.js 14+ (App Router, TypeScript estricto, Tailwind CSS configurado para enfoque Mobile-First).
   * Configurar `tsconfig.json` con soporte para decoradores y alias de rutas (`@/modules/*`, `@/shared/*`, `@/components/*`).
-  * Instalar e inicializar primitivos de **Shadcn UI** (`components.json`).
-  * Configurar **TanStack Table** (`@tanstack/react-table`).
+  * Integrar tokens de diseño y paleta de `design/DESIGN.md` en `tailwind.config.ts`:
+    * Colores: `navy-deep` (`#2B3467`), `powder-blue` (`#BAD7E9`), `clinical-red` (`#EB455F`), `surface-ivory` (`#FCFFE7`), `surface-subtle` (`#F8FAFC`), `border-subtle` (`#E2E8F0`).
+    * Tipografías de Google Fonts: *Plus Jakarta Sans* (encabezados), *Inter* (cuerpo y formularios), *JetBrains Mono* (códigos de barras y tasas BCV).
+  * Instalar e inicializar primitivos de **Shadcn UI** (`components.json`) adaptando sus variables CSS al tema *Clinical Precision*.
+  * Configurar **TanStack Table** (`@tanstack/react-table`) con soporte para vistas responsivas en pantallas móviles.
 - [ ] **0.3 Configuración del Framework de Pruebas (Vitest):**
   * Instalar y configurar `vitest`, `@testing-library/react` y `jsdom`.
   * Configurar script `npm run test` en `package.json`.
@@ -205,5 +208,9 @@ Verificar el cumplimiento estricto de todas las directrices de `AGENTS.md`, ejec
   * Probar regla de cambio de sede con carrito lleno.
   * Probar cálculo de tarifas y exoneración de delivery a $25.
   * Probar bloqueo y reposición atómica de stock.
-- [ ] **7.4 Contenerización Final:**
+- [ ] **7.4 Auditoría de Diseño Responsivo (Mobile-First):**
+  * Verificar en navegadores móviles (iOS Safari, Android Chrome) y viewports responsive (375px, 768px, 1024px, 1440px).
+  * Comprobar que no exista desbordamiento horizontal (*horizontal overflow*).
+  * Validar usabilidad de botones táctiles (mínimo 44x44px), legibilidad de textos y navegación con una mano.
+- [ ] **7.5 Contenerización Final:**
   * Compilar imagen de producción Docker optimizada en multistage (`standalone` mode en Next.js).

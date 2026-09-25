@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-secondary": "#ffffff",
+          "surface-container-low": "#eff4ff",
+          "inverse-surface": "#213145",
+          "primary": "#141e50",
+          "on-surface-variant": "#46464f",
+          "powder-blue": "#BAD7E9",
+          "surface-subtle": "#F8FAFC",
+          "on-primary-container": "#959ed8",
+          "secondary-fixed-dim": "#aecbdc",
+          "on-tertiary-container": "#ff7684",
+          "outline": "#767680",
+          "tertiary-fixed-dim": "#ffb2b7",
+          "on-background": "#0b1c30",
+          "on-primary-fixed-variant": "#3a4377",
+          "on-secondary-container": "#4c6878",
+          "surface-container": "#e5eeff",
+          "primary-container": "#2b3467",
+          "tertiary-fixed": "#ffdadb",
+          "on-error": "#ffffff",
+          "error-container": "#ffdad6",
+          "surface": "#f8f9ff",
+          "surface-container-high": "#dce9ff",
+          "surface-bright": "#f8f9ff",
+          "surface-container-highest": "#d3e4fe",
+          "background": "#f8f9ff",
+          "navy-deep": "#2B3467",
+          "tertiary": "#4e0012",
+          "outline-variant": "#c6c5d0",
+          "clinical-red": "#EB455F",
+          "primary-fixed": "#dee0ff",
+          "on-primary-fixed": "#0c1649",
+          "border-subtle": "#E2E8F0",
+          "secondary-container": "#c9e7f9",
+          "on-secondary-fixed-variant": "#2f4a59",
+          "on-tertiary-fixed-variant": "#92002a",
+          "inverse-on-surface": "#eaf1ff",
+          "surface-container-lowest": "#ffffff",
+          "on-error-container": "#93000a",
+          "surface-dim": "#cbdbf5",
+          "on-tertiary": "#ffffff",
+          "on-secondary-fixed": "#001e2b",
+          "surface-variant": "#d3e4fe",
+          "error": "#ba1a1a",
+          "on-tertiary-fixed": "#40000d",
+          "on-primary": "#ffffff",
+          "secondary": "#476271",
+          "surface-ivory": "#FCFFE7",
+          "primary-fixed-dim": "#bac3ff",
+          "tertiary-container": "#760020",
+          "on-surface": "#0b1c30",
+          "inverse-primary": "#bac3ff",
+          "secondary-fixed": "#c9e7f9",
+          "surface-tint": "#525b90"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "margin-sm": "1rem",
+          "gutter-lg": "2rem",
+          "space-md": "1rem",
+          "space-xl": "2.5rem",
+          "gutter": "1.5rem",
+          "space-xs": "0.25rem",
+          "space-lg": "1.5rem",
+          "margin-lg": "3rem",
+          "gutter-sm": "1rem",
+          "margin": "1.5rem",
+          "space-sm": "0.5rem"
+        },
+        "fontFamily": {
+          "label-md": [
+            "Inter"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "display-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "display": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Inter"
+          ],
+          "code-sm": [
+            "JetBrains Mono"
+          ]
+        },
+        "fontSize": {
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "500"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-mobile": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "22px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "30px",
+            {
+              "lineHeight": "38px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "display": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "500"
+            }
+          ],
+          "code-sm": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "500"
+            }
+          ]
+        }
+      },
+    },
+  };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary text-on-primary py-1 px-margin-lg"><div class="max-w-7xl mx-auto flex items-center justify-between font-label-sm text-label-sm"><span>ISO 13485:2016 Certificado | Insumos Médicos Clínicos Garantizados</span><span>Despacho Urgente en 24h a Hospitales y Clínicas</span></div></div><div class="h-28 max-w-7xl mx-auto px-margin-lg flex flex-col justify-center gap-space-sm"><div class="flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><img alt="MediSupply Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyYDrV7P95A5AcWvC5ZWrDThIwhicbr4MyFBFg8t9ZYJx0rjRUO2M4iY5565liaOUAS88xlIOVKthSryw4rCzizuyErB7HDA_-2AriNYsi7owJARTXtWAhyrjAnnJ5NqiS4V1pHN_srpy6pyV7E_KwFJ8tZsXcVbUElZweVZ5Fzmd_bxM2fRHfIsZD7zRTjQ3vrXxterQMOVc0o1mKRTEkxkQOsSnYfy_2fKn4cVzh8g5hGvf0c5s6"/><span class="font-headline-md text-headline-md text-primary font-bold tracking-tight">MediSupply</span></div><div class="hidden md:flex items-center flex-1 max-w-md bg-surface-container-lowest px-3 py-1.5 rounded-xl shadow-[0_1px_4px_rgba(43,52,103,0.05)]"><span class="material-symbols-outlined text-outline text-lg mr-2">search</span><span class="font-body-sm text-body-sm text-on-surface-variant flex-1">Buscar instrumental, apósitos, reactivos...</span><kbd class="bg-surface-container font-code-sm text-code-sm text-on-surface px-1.5 py-0.5 rounded">Ctrl+K</kbd></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-1.5 bg-tertiary-fixed text-on-tertiary-fixed px-2.5 py-1 rounded-full font-label-sm text-label-sm"><span class="material-symbols-outlined text-clinical-red text-base">emergency</span><span>Suministros de Emergencia</span></div><a class="relative p-2 text-on-surface-variant hover:text-on-surface flex items-center justify-center" data-path="carrito" href="#"><span class="material-symbols-outlined text-xl">shopping_cart</span><span class="absolute -top-0.5 -right-0.5 bg-clinical-red text-on-error font-code-sm text-code-sm w-4 h-4 rounded-full flex items-center justify-center">3</span></a><div class="flex items-center gap-2 pl-2"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX6mBdeVEDGq7Q8SXk3EQQpkGit-MmmH1J3vTHT5QTCZPWoSELl5xiF2zh3fGHqykKJb4ilVhZGnw44dRNvMIB24bUns-jwZyafapVhGBf2IcXnfhZUryNyRWtEPh_31N-_uzhg9zRxdpCawpVwA9dCbJklslXtdwnc80p60AlabUU3sJOF7mpAdUWMLLsRRp6N2NQqE1-nA_YcTbXC1LovaAKW6TtALYywi-EaGa_EEm-Rxh6uy5I"/><span class="font-label-md text-label-md text-on-surface hidden lg:inline">Dr. Alarcón</span></div></div></div><nav class="flex items-center gap-gutter overflow-x-auto pb-1 font-label-md text-label-md" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg"><a class="text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-colors" data-path="equipos-de-diagnostico" href="#">Equipos de Diagnóstico</a><a class="text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-colors" data-path="mobiliario-clinico" href="#">Mobiliario Clínico</a><a class="text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-colors" data-path="insumos-quirurgicos" href="#">Insumos Quirúrgicos</a><a class="text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-colors" data-path="proteccion-bioseguridad" href="#">Protección &amp; Bioseguridad</a><a class="text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-colors" data-path="ofertas" href="#">Ofertas</a></nav></div></header><main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Notification Pill Bar -->
+<section class="w-full bg-surface-container-low px-margin-lg py-space-xs">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-clinical-red/10 text-clinical-red font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-clinical-red animate-pulse"></span>
+          Alerta Sanitaria
+        </span>
+<span class="hidden sm:inline">Prioridad en envíos de terapia intensiva y monitoreo de constantes vitales.</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-code-sm text-code-sm text-secondary">Lote Verificado: ISP-2024-Q3</span>
+<a class="hover:text-primary transition-colors flex items-center gap-0.5" href="#uikit">
+<span>Kit de Componentes shadcn</span>
+<span class="material-symbols-outlined text-sm">arrow_outward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Hero Section with Asymmetric Depth and Medical Authority -->
+<section class="relative w-full overflow-hidden bg-gradient-to-b from-surface-subtle via-surface to-surface-container-low py-space-xl">
+<div class="max-w-7xl mx-auto px-margin-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center">
+<!-- Left Content Column -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-navy-deep font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-sm text-clinical-red" style="font-variation-settings: 'FILL' 1;">verified</span>
+              Dispositivos Biomédicos Grado Quirúrgico
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-ivory text-primary-container font-code-sm text-code-sm font-medium">
+              CE 0123 • FDA 510(k)
+            </span>
+</div>
+<h1 class="font-display text-display text-primary tracking-tight font-extrabold max-w-2xl">
+            Tecnología médica y suministros certificados para <span class="text-clinical-red">clínicas y hospitales</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            Aprovisionamiento clínico de alta confiabilidad. Equipos de soporte vital, diagnóstico instrumental y bioseguridad con trazabilidad integral y entrega crítica en 24 horas.
+          </p>
+<!-- CTAs following shadcn Button design patterns -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<!-- shadcn Primary Button -->
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-navy-deep text-on-primary font-label-md text-label-md shadow-md hover:bg-primary transition-all duration-200" href="#catalogo">
+<span class="material-symbols-outlined text-lg">medical_services</span>
+<span>Explorar Catálogo Hospitalario</span>
+</a>
+<!-- shadcn Urgent / Accent Button -->
+<button class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-clinical-red text-on-error font-label-md text-label-md shadow-md hover:bg-tertiary-container transition-all duration-200" onclick="document.getElementById('emergencyDialog').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-lg">bolt</span>
+<span>Pedido de Emergencia 24h</span>
+</button>
+<!-- shadcn Secondary Outline -->
+<a class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-surface-container-lowest text-navy-deep font-label-md text-label-md hover:bg-powder-blue/20 transition-all duration-200" href="#uikit">
+<span class="material-symbols-outlined text-lg">dataset</span>
+<span>shadcn/ui Spec Sheet</span>
+</a>
+</div>
+<!-- Proof Metrics Bar -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-md border-t-0 max-w-lg">
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg font-bold text-navy-deep">24h</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Despacho UCI garantizado</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg font-bold text-navy-deep">+15,000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">SKUs con lote verificado</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg font-bold text-navy-deep">99.8%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cumplimiento ISO 13485</span>
+</div>
+</div>
+</div>
+<!-- Right Visual Showcase: Clinical Equipment Bento -->
+<div class="lg:col-span-5 relative">
+<div class="relative w-full rounded-2xl bg-surface-container-lowest p- space-md shadow-xl overflow-hidden">
+<div class="aspect-4/3 w-full rounded-xl overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="High precision modern medical multiparameter patient monitor displaying vital signs with crisp blue and green ECG waveforms in a clean, brightly lit sterile hospital room. Subtle reflections on the tempered glass screen, professional deep navy casing with pristine white clinical finish, photorealistic medical gear photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvMAKbvxpcvJxtmOQzTdKULOPLxeZy_GWFnmeu8CxdbKXuAPtTl6wvKaU10ny8vy2eQZ61y96mk0KD9CpxgJLjHB21Y05PfTq7fIUeCYs2SSmCWMd1noS3ELUME2slK2HSTtcKvTEQG4I7GFOMNKFEvoH-ujx_ao3hIYvHVnyPyPToDet2VzcsNdPSK6I7BpQBkZktzjRPexC7yx21-0ldBNAonYt6JXq0XPaE-fzwZ-32pGANUb8S"/>
+<div class="absolute top-3 left-3 bg-navy-deep/90 text-on-primary px-3 py-1 rounded-full font-code-sm text-code-sm backdrop-blur-md flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-powder-blue"></span>
+<span>MONITOR MULTIPARÁMETRO VITAL-700</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-ivory/95 text-navy-deep px-3 py-1.5 rounded-lg shadow-md font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-clinical-red text-base">verified</span>
+                Calibrado Biomédico 2024
+              </div>
+</div>
+<!-- Micro Telemetry Preview inside Card -->
+<div class="mt-space-md grid grid-cols-3 gap-space-xs bg-surface-subtle p-space-sm rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">Ritmo Cardíaco</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm font-bold text-clinical-red">72</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">LPM</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">SpO₂ Oximetría</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">99%</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Arterial</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">Presión Art.</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm font-bold text-navy-deep">120/80</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">mmHg</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Alert Callout -->
+<section class="w-full bg-surface py-space-sm">
+<div class="max-w-7xl mx-auto px-margin-lg">
+<div class="rounded-xl bg-powder-blue/20 p-space-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="p-2 rounded-lg bg-navy-deep text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">local_hospital</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-navy-deep font-bold">Convenios Marco &amp; Licitaciones Públicas</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Descuentos de hasta un 34% aplicados automáticamente para pedidos institucionales superiores a $2,500 USD.</p>
+</div>
+</div>
+<button class="px-4 py-2 rounded-xl bg-surface-container-lowest text-navy-deep font-label-md text-label-md font-semibold hover:bg-surface-container transition-colors shadow-sm whitespace-nowrap" onclick="document.getElementById('volumenDialog').classList.remove('hidden')" type="button">
+          Consultar Baremos
+        </button>
+</div>
+</div>
+</section>
+<!-- Main Catalog Showcase with shadcn-like Controls and Filter Sidebar -->
+<section class="w-full bg-surface-subtle py-space-xl" id="catalogo">
+<div class="max-w-7xl mx-auto px-margin-lg">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
+<div>
+<span class="font-code-sm text-code-sm text-clinical-red uppercase tracking-wider font-semibold">Inventario Hospitalario Disponible</span>
+<h2 class="font-display text-display text-navy-deep font-bold">Catálogo Clínico Integral</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Insumos y aparatología médica con certificación sanitaria inmediata para centros de salud.</p>
+</div>
+<!-- shadcn Tabs Component Pattern -->
+<div class="inline-flex p-1 rounded-xl bg-surface-container-highest/60 self-start md:self-auto overflow-x-auto">
+<button class="tab-btn active-tab px-3.5 py-1.5 rounded-lg font-label-md text-label-md font-medium text-navy-deep bg-surface-container-lowest shadow-sm transition-all" onclick="filterCategory('todos', this)" type="button">Todos</button>
+<button class="tab-btn px-3.5 py-1.5 rounded-lg font-label-md text-label-md font-medium text-on-surface-variant hover:text-navy-deep transition-all" onclick="filterCategory('diagnostico', this)" type="button">Diagnóstico</button>
+<button class="tab-btn px-3.5 py-1.5 rounded-lg font-label-md text-label-md font-medium text-on-surface-variant hover:text-navy-deep transition-all" onclick="filterCategory('quirurgico', this)" type="button">Quirúrgico</button>
+<button class="tab-btn px-3.5 py-1.5 rounded-lg font-label-md text-label-md font-medium text-on-surface-variant hover:text-navy-deep transition-all" onclick="filterCategory('bioseguridad', this)" type="button">Bioseguridad</button>
+</div>
+</div>
+<!-- Layout Grid: shadcn Sidebar Filters + 3-Col Product Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-start">
+<!-- shadcn Filter Panel (Col 3) -->
+<aside class="lg:col-span-3 bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-space-md sticky top-32">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-headline-sm text-headline-sm text-navy-deep font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-lg">tune</span> Filtros Avanzados
+            </span>
+<button class="font-label-sm text-label-sm text-clinical-red hover:underline" onclick="resetFilters()" type="button">Restablecer</button>
+</div>
+<!-- Search Input shadcn style -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Búsqueda rápida</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-base">search</span>
+<input class="w-full bg-surface-subtle text-on-surface font-body-sm text-body-sm pl-9 pr-3 py-2 rounded-lg outline-none focus:bg-surface-container-lowest transition-colors shadow-inner" id="searchInput" oninput="handleSearch(this.value)" placeholder="SKU o nombre técnico..." type="text"/>
+</div>
+</div>
+<!-- Category Select (shadcn Select Simulation) -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Especialidad Hospitalaria</label>
+<div class="relative">
+<select class="w-full bg-surface-subtle text-on-surface font-body-sm text-body-sm px-3 py-2 rounded-lg appearance-none outline-none cursor-pointer" id="specialtySelect" onchange="handleSpecialty(this.value)">
+<option value="todas">Todas las Especialidades</option>
+<option value="cardiologia">Cardiología &amp; UCI</option>
+<option value="cirugia">Cirugía General</option>
+<option value="urgencias">Medicina de Urgencia</option>
+<option value="laboratorio">Laboratorio Clínico</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2.5 top-2.5 text-secondary text-base">expand_more</span>
+</div>
+</div>
+<!-- Price Range Slider (shadcn Slider Component Pattern) -->
+<div class="flex flex-col gap-2 pt-space-xs">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">Rango Presupuestario</span>
+<span class="font-code-sm text-code-sm text-navy-deep font-bold" id="priceDisplay">Hasta $4,500</span>
+</div>
+<input class="w-full accent-navy-deep cursor-pointer" id="priceRange" max="5000" min="20" oninput="handlePriceRange(this.value)" step="50" type="range" value="4500"/>
+<div class="flex justify-between text-secondary font-code-sm text-code-sm">
+<span>$20</span>
+<span>$5,000+</span>
+</div>
+</div>
+<!-- Checkboxes (shadcn Checkbox Pattern) -->
+<div class="flex flex-col gap-2 pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Estado de Disponibilidad</span>
+<label class="flex items-center gap-2.5 cursor-pointer font-body-sm text-body-sm text-on-surface-variant hover:text-navy-deep">
+<input checked="" class="w-4 h-4 rounded text-navy-deep accent-navy-deep cursor-pointer" type="checkbox"/>
+<span>En Stock para entrega 24h</span>
+</label>
+<label class="flex items-center gap-2.5 cursor-pointer font-body-sm text-body-sm text-on-surface-variant hover:text-navy-deep">
+<input checked="" class="w-4 h-4 rounded text-navy-deep accent-navy-deep cursor-pointer" type="checkbox"/>
+<span>Lote Certificado ISO 13485</span>
+</label>
+<label class="flex items-center gap-2.5 cursor-pointer font-body-sm text-body-sm text-on-surface-variant hover:text-navy-deep">
+<input class="w-4 h-4 rounded text-navy-deep accent-navy-deep cursor-pointer" type="checkbox"/>
+<span>Precio con Tarifa Institucional</span>
+</label>
+</div>
+<!-- Notice Badge -->
+<div class="p-space-sm rounded-xl bg-surface-ivory flex items-start gap-2">
+<span class="material-symbols-outlined text-clinical-red text-base mt-0.5">verified_user</span>
+<p class="font-body-sm text-body-sm text-navy-deep">
+              Todas las órdenes incluyen certificados de lote y calibración metrológica original.
+            </p>
+</div>
+</aside>
+<!-- Product Cards Showcase (Col 9) -->
+<main class="lg:col-span-9 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-gutter">
+<!-- Product Card 1: Monitor de Signos Vitales -->
+<div class="product-card group flex flex-col bg-surface-container-lowest rounded-2xl p-space-sm shadow-sm hover:shadow-xl transition-all duration-300" data-cat="diagnostico" data-price="2890" data-title="Monitor de Signos Vitales Multiparámetro">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-subtle mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="High resolution studio shot of a hospital bedside vital signs patient monitor. Medical screen with illuminated crisp ECG lines, pulse oximeter finger probe cable neatly coiled beside it, matte deep navy housing, sterile clinical white background with soft laboratory lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBRMqXjyC-VLh62DbYMe--SODnjqtyuf5QAKKAjr7vhtyh8l6OzLtK0caQT4jyCObCzctwKbXLo_ajnxlOT5DrxjkmZRxQS6A30pef-8nwIDOPHsuVMBgeb4sIHxXb5wpTiUkcl0o7H60i-IdslFUS9VlaEzdTvuwARQGuZgRh97H2Sm97fP30ur9mgpJW_Zuqp-4ssyZ_0nAA-4Atq5YvksIW2oTYqVfc01i4n_554eNwg7G8ykk-"/>
+<div class="absolute top-2.5 left-2.5 flex flex-col gap-1">
+<span class="px-2.5 py-0.5 rounded-full bg-navy-deep text-on-primary font-code-sm text-code-sm font-semibold">En Stock</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-ivory text-primary-container font-code-sm text-code-sm font-bold">UCI / Terapia</span>
+</div>
+<button class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur text-navy-deep flex items-center justify-center hover:bg-clinical-red hover:text-on-error transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="flex items-center justify-between text-secondary font-code-sm text-code-sm mb-1">
+<span>SKU: MED-VTL-880</span>
+<span class="flex items-center gap-0.5 text-clinical-red"><span class="material-symbols-outlined text-xs">star</span> 4.9 (42)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-navy-deep font-bold mb-1 leading-snug">Monitor Multiparámetro Vital-700</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">Pantalla TFT 12.1", ECG 5 derivaciones, SpO2 masimo, NIBP y temperatura dual con alarmas auditivas.</p>
+<div class="mt-auto pt-space-xs border-t-0 flex flex-col gap-space-xs">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-body-sm text-body-sm text-secondary line-through">$3,400.00</span>
+<div class="font-headline-md text-headline-md font-bold text-navy-deep">$2,890.00 <span class="font-label-sm text-label-sm font-normal text-on-surface-variant">USD</span></div>
+</div>
+<span class="text-clinical-red font-label-sm text-label-sm font-semibold bg-clinical-red/10 px-2 py-0.5 rounded">-15% Inst.</span>
+</div>
+<!-- shadcn Quantity Selector + Add Button -->
+<div class="grid grid-cols-5 gap-1.5 pt-1">
+<div class="col-span-2 flex items-center bg-surface-subtle rounded-lg p-0.5 justify-between">
+<button class="w-7 h-7 flex items-center justify-center rounded text-navy-deep hover:bg-surface-container" onclick="adjustQty(this, -1)" type="button">-</button>
+<span class="font-code-sm text-code-sm font-bold text-navy-deep px-1">1</span>
+<button class="w-7 h-7 flex items-center justify-center rounded text-navy-deep hover:bg-surface-container" onclick="adjustQty(this, 1)" type="button">+</button>
+</div>
+<button class="col-span-3 flex items-center justify-center gap-1.5 bg-navy-deep text-on-primary py-2 px-3 rounded-lg font-label-sm text-label-sm hover:bg-primary transition-colors shadow-sm" onclick="addToCart('Monitor Multiparámetro Vital-700', 2890)" type="button">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+<span>Añadir</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2: Tensiómetro Digital Clínico -->
+<div class="product-card group flex flex-col bg-surface-container-lowest rounded-2xl p-space-sm shadow-sm hover:shadow-xl transition-all duration-300" data-cat="diagnostico" data-price="145" data-title="Tensiómetro Digital Clínico">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-subtle mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Medical professional desktop digital blood pressure monitor with precision cuff, illuminated white LCD screen, precision sensor cord, high quality clinical product photography against bright sterile grey background with subtle medical reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4JeqRCNbX8j9FRxcZ2HU7kZV23AVzP-iD0LB-NYq838OPxLgFXj0WEcVAO_LlxM-rzwreksQ93Y5ne4MRJ4Wv-_WdUfNM217JDwh8a6f2hEDR6sHbRYXDW3DeWcfdkMqLBzGQnWvJwW8GNAe6zx2PZu5fc7oyfg2OwOarFVBCOOauKKtdECVILq3t53EK3W--l9lKAF5grls0kDn2HMaJG45AAwwIQNExl5so89CBZACJEEPbaYlm"/>
+<div class="absolute top-2.5 left-2.5 flex flex-col gap-1">
+<span class="px-2.5 py-0.5 rounded-full bg-navy-deep text-on-primary font-code-sm text-code-sm font-semibold">En Stock</span>
+<span class="px-2 py-0.5 rounded-full bg-powder-blue text-navy-deep font-code-sm text-code-sm font-bold">AAMI / ESH</span>
+</div>
+<button class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur text-navy-deep flex items-center justify-center hover:bg-clinical-red hover:text-on-error transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="flex items-center justify-between text-secondary font-code-sm text-code-sm mb-1">
+<span>SKU: TNS-DIG-402</span>
+<span class="flex items-center gap-0.5 text-clinical-red"><span class="material-symbols-outlined text-xs">star</span> 5.0 (89)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-navy-deep font-bold mb-1 leading-snug">Tensiómetro Digital Pro-Clinic</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">Validación clínica internacional para hipertensión. Detección de arritmias AFIB y manguito amplio de 22 a 42 cm.</p>
+<div class="mt-auto pt-space-xs border-t-0 flex flex-col gap-space-xs">
+<div class="flex items-baseline justify-between">
+<div>
+<div class="font-headline-md text-headline-md font-bold text-navy-deep">$145.00 <span class="font-label-sm text-label-sm font-normal text-on-surface-variant">USD</span></div>
+</div>
+<span class="text-navy-deep font-label-sm text-label-sm font-semibold bg-powder-blue/40 px-2 py-0.5 rounded">Clínica &amp; Domicilio</span>
+</div>
+<div class="grid grid-cols-5 gap-1.5 pt-1">
+<div class="col-span-2 flex items-center bg-surface-subtle rounded-lg p-0.5 justify-between">
+<button class="w-7 h-7 flex items-center justify-center rounded text-navy-deep hover:bg-surface-container" onclick="adjustQty(this, -1)" type="button">-</button>
+<span class="font-code-sm text-code-sm font-bold text-navy-deep px-1">1</span>
+<button class="w-7 h-7 flex items-center justify-center rounded text-navy-deep hover:bg-surface-container" onclick="adjustQty(this, 1)" type="button">+</button>
+</div>
+<button class="col-span-3 flex items-center justify-center gap-1.5 bg-navy-deep text-on-primary py-2 px-3 rounded-lg font-label-sm text-label-sm hover:bg-primary transition-colors shadow-sm" onclick="addToCart('Tensiómetro Digital Pro-Clinic', 145)" type="button">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+<span>Añadir</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3: Estetoscopio Cardiológico -->
+<div class="product-card group flex flex-col bg-surface-container-lowest rounded-2xl p-space-sm shadow-sm hover:shadow-xl transition-all duration-300" data-cat="diagnostico" data-price="210" data-title="Estetoscopio Cardiológico Acero Inox">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-subtle mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="High quality stainless steel master cardiology stethoscope with deep navy blue tubing and dual head chestpiece, resting gracefully on a clean ivory lab tray with pristine diagnostic lighting and realistic metallic sheen." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6w0qsdbLXNuN_IoVOBhd-HvLDFpYvFVAq7tz01ouuiRcraz8QuUyEOR5dZhnzsrT9gXC8CXaKp7TDyhgPmsre2VEk5k3uI9LBWWs5LE_m8neCvs0k3cbnSO-oT2GYOr8uWn4vWY-F6ILBXWztga_ifYURl99yV3-FpXT5SlIQJbDU-ittXprDsQdHux9vJ9r3iylT4eqmrJAWqDG_Ir2zfzbU5PiA5TmnXmvmckLa2B8zQHVDt6oq"/>
+<div class="absolute top-2.5 left-2.5 flex flex-col gap-1">
+<span class="px-2.5 py-0.5 rounded-full bg-navy-deep text-on-primary font-code-sm text-code-sm font-semibold">En Stock</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-ivory text-navy-deep font-code-sm text-code-sm font-bold">Acero Quirúrgico 316L</span>
+</div>
+<button class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur text-navy-deep flex items-center justify-center hover:bg-clinical-red hover:text-on-error transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="flex items-center justify-between text-secondary font-code-sm text-code-sm mb-1">
+<span>SKU: EST-CRD-910</span>
+<span class="flex items-center gap-0.5 text-clinical-red"><span class="material-symbols-outlined text-xs">star</span> 4.9 (115)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-navy-deep font-bold mb-1 leading-snug">Estetoscopio Cardio-Acoustic Elite</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">Membrana de doble frecuencia con campana de alta sensibilidad acústica y binaurales anatómicos de sellado suave.</p>
+<div class="mt-auto pt-space-xs border-t-0 flex flex-col gap-space-xs">
+<div class="flex items-baseline justify-between">
+<div>
+<div class="font-headline-md text-headline-md font-bold text-navy-deep">$210.00 <span class="font-label-sm text-label-sm font-normal text-on-surface-variant">USD</span></div>
+</div>
+<span class="text-navy-deep font-label-sm text-label-sm font-semibold bg-powder-blue/40 px-2 py-0.5 rounded">Garantía 5 Años</span>
+</div>
+<div class="grid grid-cols-5 gap-1.5 pt-1">
+<div class="col-span-2 flex items-center bg-surface-subtle rounded-lg p-0.5 justify-between">
+<button class="w-7 h-7 flex items-center justify-center rounded text-navy-deep hover:bg-surface-container" onclick="adjustQty(this, -1)" type="button">-</button>
+<span class="font-code-sm text-code-sm font-bold text-navy-deep px-1">1</span>
+<button class="w-7 h-7 flex items-center justify-center rounded text-navy-deep hover:bg-surface-container" onclick="adjustQty(this, 1)" type="button">+</button>
+</div>
+<button class="col-span-3 flex items-center justify-center gap-1.5 bg-navy-deep text-on-primary py-2 px-3 rounded-lg font-label-sm text-label-sm hover:bg-primary transition-colors shadow-sm" onclick="addToCart('Estetoscopio Cardio-Acoustic Elite', 210)" type="button">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+<span>Añadir</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4: Lámpara Quirúrgica LED Móvil -->
+<div class="product-card group flex flex-col bg-surface-container-lowest rounded-2xl p-space-sm shadow-sm hover:shadow-xl transition-all duration-300" data-cat="quirurgico" data-price="4200" data-title="Lámpara Quirúrgica LED Móvil">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-subtle mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="High tech medical mobile surgical shadowless operating lamp with multidirectional LED heads and articulated chrome arm, sterile surgical theater equipment photography, bright daylight 5500K clinical lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIUEQ5nt74Cf2hnrliIgRXeJnNNrpFT7NZIIfeW-wnR7alMQ7A62XzIKQ7zmJ3xd5Fvd1FDgQkP-7NfGsgxEex1iEulWuHbThy7Sm1S8cQIustRPbqRNz3exxFAFCEPIBfdMm5CDhFSBlCfAUtWk8Gzxw1G2Dj04uWDaMGLiFauVHSVSXs8rSx6Tqx8PgChNNQy_RVq4lAvqmbFp8BRSxDcCOghUu9OKw-0Jte8INWA4mLFy58J_-a"/>
+<div class="absolute top-2.5 left-2.5 flex flex-col gap-1">
+<span class="px-2.5 py-0.5 rounded-full bg-clinical-red text-on-error font-code-sm text-code-sm font-semibold">Oferta Institucional</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-navy-deep font-code-sm text-code-sm font-bold">160,000 Lux</span>
+</div>
+<button class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur text-navy-deep flex items-center justify-center hover:bg-clinical-red hover:text-on-error transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="flex items-center justify-between text-secondary font-code-sm text-code-sm mb-1">
+<span>SKU: LMP-QUR-550</span>
+<span class="flex items-center gap-0.5 text-clinical-red"><span class="material-symbols-outlined text-xs">star</span> 4.8 (19)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-navy-deep font-bold mb-1 leading-snug">Lámpara Quirúrgica LED Móvil Lumina-OR</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">Base rodante antideslizante con batería de emergencia autónoma 4h. Regulación de temperatura de color 3800-4800K.</p>
+<div class="mt-auto pt-space-xs border-t-0 flex flex-col gap-space-xs">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-body-sm text-body-sm text-secondary line-through">$4,950.00</span>
+<div class="font-headline-md text-headline-md font-bold text-navy-deep">$4,200.00 <span class="font-label-sm text-label-sm font-normal text-on-surface-variant">USD</span></div>
+</div>
+<span class="text-clinical-red font-label-sm text-label-sm font-semibold bg-clinical-red/10 px-2 py-0.5 rounded">-18% Licitación</span>
+</div>
+<div class="grid grid-cols-5 gap-1.5 pt-1">
+<div class="col-span-2 flex items-center bg-surface-subtle rounded-lg p-0.5 justify-between">
+<button class="w-7 h-7 flex items-center justify-center rounded text-navy-deep hover:bg-surface-container" onclick="adjustQty(this, -1)" type="button">-</button>
+<span class="font-code-sm text-code-sm font-bold text-navy-deep px-1">1</span>
+<button class="w-7 h-7 flex items-center justify-center rounded text-navy-deep hover:bg-surface-container" onclick="adjustQty(this, 1)" type="button">+</button>
+</div>
+<button class="col-span-3 flex items-center justify-center gap-1.5 bg-navy-deep text-on-primary py-2 px-3 rounded-lg font-label-sm text-label-sm hover:bg-primary transition-colors shadow-sm" onclick="addToCart('Lámpara Quirúrgica LED Lumina-OR', 4200)" type="button">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+<span>Añadir</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 5: Kit de Instrumental de Disección -->
+<div class="product-card group flex flex-col bg-surface-container-lowest rounded-2xl p-space-sm shadow-sm hover:shadow-xl transition-all duration-300" data-cat="quirurgico" data-price="320" data-title="Kit de Instrumental de Disección">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-subtle mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Top view of surgical dissection instrument kit laid out systematically in an autoclavable medical stainless steel cassette tray. Precision scalpel handles, Metzenbaum scissors, thumb forceps, needle holders with satin glare-free finish in clean clinical lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOtpBcW7ZAsgMDS8p3EmDjQ2PMgMjqzIzvhfktmXJtHULpRi1khpJsWLxuuBmYp3k3Mv8TJAEPgnaB89ft0BDwlcOe_dl225j-fm-zif-NF1xYbd3DSB-wBTQ-Bf5yERb3cBwkJkHqPuS2dMXqckE_4LLIOpEnBdTVo2TiqSsmUNBWy9OWnfDgilo3gQ4HzYuMoLeQI8xcZRfD5qSc9Ay28kVDBvsMDzq-CHk58FyrybI0OAJOwJP-"/>
+<div class="absolute top-2.5 left-2.5 flex flex-col gap-1">
+<span class="px-2.5 py-0.5 rounded-full bg-navy-deep text-on-primary font-code-sm text-code-sm font-semibold">En Stock</span>
+<span class="px-2 py-0.5 rounded-full bg-powder-blue text-navy-deep font-code-sm text-code-sm font-bold">Autoclavable 134°C</span>
+</div>
+<button class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur text-navy-deep flex items-center justify-center hover:bg-clinical-red hover:text-on-error transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="flex items-center justify-between text-secondary font-code-sm text-code-sm mb-1">
+<span>SKU: INS-DIS-120</span>
+<span class="flex items-center gap-0.5 text-clinical-red"><span class="material-symbols-outlined text-xs">star</span> 4.9 (67)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-navy-deep font-bold mb-1 leading-snug">Set Quirúrgico de Disección Mayor (24 Pzs)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">Acero alemán tratado con carburo de tungsteno. Incluye caja perforada con filtro para esterilización rápida.</p>
+<div class="mt-auto pt-space-xs border-t-0 flex flex-col gap-space-xs">
+<div class="flex items-baseline justify-between">
+<div>
+<div class="font-headline-md text-headline-md font-bold text-navy-deep">$320.00 <span class="font-label-sm text-label-sm font-normal text-on-surface-variant">USD</span></div>
+</div>
+<span class="text-navy-deep font-label-sm text-label-sm font-semibold bg-powder-blue/40 px-2 py-0.5 rounded">Grado Quirúrgico</span>
+</div>
+<div class="grid grid-cols-5 gap-1.5 pt-1">
+<div class="col-span-2 flex items-center bg-surface-subtle rounded-lg p-0.5 justify-between">
+<button class="w-7 h-7 flex items-center justify-center rounded text-navy-deep hover:bg-surface-container" onclick="adjustQty(this, -1)" type="button">-</button>
+<span class="font-code-sm text-code-sm font-bold text-navy-deep px-1">1</span>
+<button class="w-7 h-7 flex items-center justify-center rounded text-navy-deep hover:bg-surface-container" onclick="adjustQty(this, 1)" type="button">+</button>
+</div>
+<button class="col-span-3 flex items-center justify-center gap-1.5 bg-navy-deep text-on-primary py-2 px-3 rounded-lg font-label-sm text-label-sm hover:bg-primary transition-colors shadow-sm" onclick="addToCart('Set Quirúrgico de Disección Mayor', 320)" type="button">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+<span>Añadir</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 6: Caja de Guantes de Nitrilo Grado Médico -->
+<div class="product-card group flex flex-col bg-surface-container-lowest rounded-2xl p-space-sm shadow-sm hover:shadow-xl transition-all duration-300" data-cat="bioseguridad" data-price="38" data-title="Caja de Guantes de Nitrilo Grado Médico">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-subtle mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Dispenser box of medical examination powder-free blue nitrile gloves beside stacked pairs, micro-textured fingertips visible, high hygiene hospital clinical setup with crisp modern studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2NI80FaXcWQRlRbIQc7H4akxrbTxoqs8wowUJ7lxjbD0oJgLYhI-qZVN6rZyPgC6eQHHiRntpvSsg4XELr6v4pPXymX_HQCWHBWKz5ktNGnKNzIBGlY0yFa2CBMYhhNi4jq7ev6d3e422-xT2ZQXZnDfuLidDwxo_dgOnB6HPb71NcdYCUi1_YML9pci-d47ThUcHHOSml_WMMdv39cufMLCoHBqv17MQtk3ACZB66a_MnSFmoaxw"/>
+<div class="absolute top-2.5 left-2.5 flex flex-col gap-1">
+<span class="px-2.5 py-0.5 rounded-full bg-navy-deep text-on-primary font-code-sm text-code-sm font-semibold">En Stock</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-ivory text-navy-deep font-code-sm text-code-sm font-bold">AQL 1.5 • EN 455</span>
+</div>
+<button class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur text-navy-deep flex items-center justify-center hover:bg-clinical-red hover:text-on-error transition-colors" type="button">
+<span class="material-symbols-outlined text-base">favorite</span>
+</button>
+</div>
+<div class="flex items-center justify-between text-secondary font-code-sm text-code-sm mb-1">
+<span>SKU: GNT-NIT-100</span>
+<span class="flex items-center gap-0.5 text-clinical-red"><span class="material-symbols-outlined text-xs">star</span> 4.9 (240)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-navy-deep font-bold mb-1 leading-snug">Guantes de Nitrilo Cobalt Blue (Pack x 200)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">Libres de polvo y látex. Resistencia química certificada a quimioterápicos y punción con microtextura digital.</p>
+<div class="mt-auto pt-space-xs border-t-0 flex flex-col gap-space-xs">
+<div class="flex items-baseline justify-between">
+<div>
+<div class="font-headline-md text-headline-md font-bold text-navy-deep">$38.50 <span class="font-label-sm text-label-sm font-normal text-on-surface-variant">USD / caja</span></div>
+</div>
+<span class="text-navy-deep font-label-sm text-label-sm font-semibold bg-powder-blue/40 px-2 py-0.5 rounded">Tallas XS a XL</span>
+</div>
+<div class="grid grid-cols-5 gap-1.5 pt-1">
+<div class="col-span-2 flex items-center bg-surface-subtle rounded-lg p-0.5 justify-between">
+<button class="w-7 h-7 flex items-center justify-center rounded text-navy-deep hover:bg-surface-container" onclick="adjustQty(this, -1)" type="button">-</button>
+<span class="font-code-sm text-code-sm font-bold text-navy-deep px-1">1</span>
+<button class="w-7 h-7 flex items-center justify-center rounded text-navy-deep hover:bg-surface-container" onclick="adjustQty(this, 1)" type="button">+</button>
+</div>
+<button class="col-span-3 flex items-center justify-center gap-1.5 bg-navy-deep text-on-primary py-2 px-3 rounded-lg font-label-sm text-label-sm hover:bg-primary transition-colors shadow-sm" onclick="addToCart('Guantes de Nitrilo Cobalt Blue (Pack x 200)', 38.5)" type="button">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+<span>Añadir</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</section>
+<!-- Complete shadcn/ui Component Kit & Styleguide Showcase (Bento Spec Section) -->
+<section class="w-full bg-surface-container-lowest py-space-xl" id="uikit">
+<div class="max-w-7xl mx-auto px-margin-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
+<div>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-navy-deep font-code-sm text-code-sm font-semibold">
+            shadcn/ui Medical Core Architecture
+          </span>
+<h2 class="font-display text-display text-navy-deep font-bold mt-2">Guía de Estilos &amp; Kit de Controles</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Primitivas y componentes atómicos con rigor clínico para agilización de flujos hospitalarios.</p>
+</div>
+<div class="flex items-center gap-space-sm font-code-sm text-code-sm text-secondary">
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-navy-deep"></span>#2B3467</span>
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-powder-blue"></span>#BAD7E9</span>
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-surface-ivory"></span>#FCFFE7</span>
+<span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-clinical-red"></span>#EB455F</span>
+</div>
+</div>
+<!-- Bento Grid for shadcn components -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Bento 1: Buttons Spec (Col 6) -->
+<div class="md:col-span-6 bg-surface-subtle rounded-2xl p-space-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-navy-deep font-bold">Button Variants</span>
+<span class="font-code-sm text-code-sm text-secondary">components/ui/button.tsx</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- default / primary -->
+<button class="px-4 py-2 rounded-xl bg-navy-deep text-on-primary font-label-md text-label-md hover:bg-primary transition-colors shadow-sm" type="button">
+              default / primary
+            </button>
+<!-- secondary -->
+<button class="px-4 py-2 rounded-xl bg-surface-container text-navy-deep font-label-md text-label-md hover:bg-powder-blue/40 transition-colors" type="button">
+              secondary
+            </button>
+<!-- destructive / alert -->
+<button class="px-4 py-2 rounded-xl bg-clinical-red text-on-error font-label-md text-label-md hover:bg-tertiary-container transition-colors shadow-sm" type="button">
+              destructive / alert
+            </button>
+<!-- outline -->
+<button class="px-4 py-2 rounded-xl bg-surface-container-lowest text-navy-deep font-label-md text-label-md hover:bg-surface-subtle transition-colors shadow-sm" type="button">
+              outline
+            </button>
+<!-- ghost -->
+<button class="px-4 py-2 rounded-xl text-navy-deep font-label-md text-label-md hover:bg-powder-blue/20 transition-colors" type="button">
+              ghost
+            </button>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-lowest font-code-sm text-code-sm text-on-surface-variant flex items-center justify-between">
+<span>&lt;Button variant="destructive" size="default"&gt;</span>
+<span class="text-clinical-red font-medium">8px radius • micro-depression</span>
+</div>
+</div>
+<!-- Bento 2: Badges & Tags (Col 6) -->
+<div class="md:col-span-6 bg-surface-subtle rounded-2xl p-space-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-navy-deep font-bold">Badge Primitives</span>
+<span class="font-code-sm text-code-sm text-secondary">components/ui/badge.tsx</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-navy-deep text-on-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-xs">check</span> default
+            </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-powder-blue text-navy-deep font-label-sm text-label-sm font-semibold">
+              secondary
+            </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-clinical-red text-on-error font-label-sm text-label-sm font-bold">
+              destructive coral
+            </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-ivory text-navy-deep font-label-sm text-label-sm font-semibold">
+              sterile ivory
+            </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-lowest text-navy-deep font-label-sm text-label-sm shadow-sm">
+              outline cert
+            </span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-lowest font-code-sm text-code-sm text-on-surface-variant flex items-center justify-between">
+<span>ISO 13485:2016 Compliant</span>
+<span class="text-navy-deep font-semibold">Trazabilidad Farmacéutica</span>
+</div>
+</div>
+<!-- Bento 3: DatePicker & Hospital Delivery Scheduling (Col 7) -->
+<div class="md:col-span-7 bg-surface-subtle rounded-2xl p-space-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm text-navy-deep font-bold">shadcn DatePicker Component</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Agendamiento de entregas hospitalarias con control de turnos biomédicos.</p>
+</div>
+<span class="font-code-sm text-code-sm text-secondary">DatePickerWithRange</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<!-- Simulated Input Field with Popover Date Trigger -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Fecha de Recepción en Pabellón</label>
+<div class="flex items-center justify-between bg-surface-container-lowest px-3 py-2.5 rounded-xl shadow-sm cursor-pointer hover:bg-surface-subtle transition-colors">
+<span class="flex items-center gap-2 font-body-sm text-body-sm text-navy-deep font-medium">
+<span class="material-symbols-outlined text-secondary text-base">calendar_month</span>
+<span>18 Octubre, 2024</span>
+</span>
+<span class="font-code-sm text-code-sm text-clinical-red font-bold">Turno UCI</span>
+</div>
+</div>
+<!-- Delivery Time Slot Selection -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Ventana Horaria Crítica</label>
+<div class="relative">
+<select class="w-full bg-surface-container-lowest text-on-surface font-body-sm text-body-sm px-3 py-2.5 rounded-xl appearance-none shadow-sm outline-none cursor-pointer">
+<option>06:00 - 09:00 (Previo a Cirugías)</option>
+<option>12:00 - 14:00 (Recambio de Turno)</option>
+<option>18:00 - 21:00 (Guardia Nocturna)</option>
+<option>URGENTE: Inmediato (&lt; 3 horas)</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-3 top-3 text-secondary text-base">schedule</span>
+</div>
+</div>
+</div>
+<!-- Micro Calendar Grid Preview typical of shadcn Calendar -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl">
+<div class="flex items-center justify-between font-label-sm text-label-sm font-semibold text-navy-deep mb-2">
+<span>Octubre 2024</span>
+<div class="flex items-center gap-1">
+<button class="p-1 hover:bg-surface-subtle rounded" type="button"><span class="material-symbols-outlined text-sm">chevron_left</span></button>
+<button class="p-1 hover:bg-surface-subtle rounded" type="button"><span class="material-symbols-outlined text-sm">chevron_right</span></button>
+</div>
+</div>
+<div class="grid grid-cols-7 gap-1 text-center font-code-sm text-code-sm">
+<span class="text-secondary py-1">Lu</span>
+<span class="text-secondary py-1">Ma</span>
+<span class="text-secondary py-1">Mi</span>
+<span class="text-secondary py-1">Ju</span>
+<span class="text-secondary py-1">Vi</span>
+<span class="text-secondary py-1">Sa</span>
+<span class="text-secondary py-1">Do</span>
+<span class="text-on-surface-variant/40 py-1">29</span>
+<span class="text-on-surface-variant/40 py-1">30</span>
+<span class="py-1 rounded hover:bg-powder-blue/30">1</span>
+<span class="py-1 rounded hover:bg-powder-blue/30">2</span>
+<span class="py-1 rounded hover:bg-powder-blue/30">3</span>
+<span class="py-1 rounded hover:bg-powder-blue/30">4</span>
+<span class="py-1 rounded hover:bg-powder-blue/30">5</span>
+<span class="py-1 rounded hover:bg-powder-blue/30">6</span>
+<span class="py-1 rounded hover:bg-powder-blue/30">7</span>
+<span class="py-1 rounded hover:bg-powder-blue/30">8</span>
+<span class="py-1 rounded hover:bg-powder-blue/30">9</span>
+<span class="py-1 rounded hover:bg-powder-blue/30">10</span>
+<span class="py-1 rounded hover:bg-powder-blue/30">11</span>
+<span class="py-1 rounded hover:bg-powder-blue/30">12</span>
+<span class="py-1 rounded hover:bg-powder-blue/30">13</span>
+<span class="py-1 rounded hover:bg-powder-blue/30">14</span>
+<span class="py-1 rounded hover:bg-powder-blue/30">15</span>
+<span class="py-1 rounded hover:bg-powder-blue/30">16</span>
+<span class="py-1 rounded hover:bg-powder-blue/30">17</span>
+<span class="py-1 rounded bg-navy-deep text-on-primary font-bold shadow-sm">18</span>
+<span class="py-1 rounded bg-powder-blue/40 text-navy-deep">19</span>
+</div>
+</div>
+</div>
+<!-- Bento 4: Alert & Alert Dialog Previews (Col 5) -->
+<div class="md:col-span-5 bg-surface-subtle rounded-2xl p-space-md flex flex-col gap-space-sm justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-headline-sm text-headline-sm text-navy-deep font-bold">Alert Components</span>
+<span class="font-code-sm text-code-sm text-secondary">Alert / AlertDialog</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Notificaciones de stock y confirmaciones de orden médica.</p>
+<!-- Alert 1: Stock Crítico (Destructive) -->
+<div class="rounded-xl bg-clinical-red/10 p-3.5 flex items-start gap-3 mb-space-xs">
+<span class="material-symbols-outlined text-clinical-red text-xl mt-0.5">warning</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-clinical-red">Aviso de Stock Crítico</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Quedan menos de 8 unidades del Monitor Vital-700 en depósito central.</span>
+</div>
+</div>
+<!-- Alert 2: Descuento por Volumen Hospitalario (Info / Navy) -->
+<div class="rounded-xl bg-surface-container-highest/60 p-3.5 flex items-start gap-3">
+<span class="material-symbols-outlined text-navy-deep text-xl mt-0.5">percent</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-navy-deep">Descuento Institucional Activo</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Licitaciones hospitalarias acceden a pago a 60 días tras evaluación crediticia.</span>
+</div>
+</div>
+</div>
+<!-- Dialog Trigger Button Group -->
+<div class="flex items-center gap-space-xs pt-space-xs">
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container-lowest text-clinical-red font-label-sm text-label-sm font-semibold shadow-sm hover:bg-clinical-red hover:text-on-error transition-colors text-center" onclick="document.getElementById('emergencyDialog').classList.remove('hidden')" type="button">
+              Trigger Emergency Alert
+            </button>
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container-lowest text-navy-deep font-label-sm text-label-sm font-semibold shadow-sm hover:bg-navy-deep hover:text-on-primary transition-colors text-center" onclick="document.getElementById('volumenDialog').classList.remove('hidden')" type="button">
+              Trigger Modal Baremo
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Alert Dialog (Emergency Order Modal Simulation) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center bg-navy-deep/60 backdrop-blur-sm p-4" id="emergencyDialog">
+<div class="bg-surface-container-lowest w-full max-w-lg rounded-2xl p-space-lg shadow-2xl flex flex-col gap-space-md animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-clinical-red/20 text-clinical-red flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">emergency</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-navy-deep">Canal de Despacho de Emergencia (24 Horas)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Esta orden activará el protocolo de despacho prioritario para salas de urgencias y unidades de cuidados intensivos.
+          </p>
+</div>
+</div>
+<div class="rounded-xl bg-surface-subtle p-space-sm flex flex-col gap-2 font-body-sm text-body-sm">
+<div class="flex justify-between">
+<span class="text-secondary">Centro Hospitalario:</span>
+<span class="font-semibold text-navy-deep">Hospital Clínico Regional</span>
+</div>
+<div class="flex justify-between">
+<span class="text-secondary">Tiempo Estimado de Entrega:</span>
+<span class="font-semibold text-clinical-red">&lt; 180 minutos (Área Metropolitana)</span>
+</div>
+<div class="flex justify-between">
+<span class="text-secondary">Cadena de Frío / Soporte:</span>
+<span class="font-semibold text-navy-deep">Monitoreo IoT Activo</span>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-4 py-2 rounded-xl bg-surface-subtle text-navy-deep font-label-md text-label-md hover:bg-surface-container transition-colors" onclick="document.getElementById('emergencyDialog').classList.add('hidden')" type="button">
+          Cancelar
+        </button>
+<button class="px-5 py-2 rounded-xl bg-clinical-red text-on-error font-label-md text-label-md font-semibold hover:bg-tertiary-container transition-colors shadow-md" onclick="confirmEmergencyOrder()" type="button">
+          Confirmar Despacho Urgente
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive Alert Dialog (Volume Hospital Discount Modal) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center bg-navy-deep/60 backdrop-blur-sm p-4" id="volumenDialog">
+<div class="bg-surface-container-lowest w-full max-w-lg rounded-2xl p-space-lg shadow-2xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm font-bold text-navy-deep flex items-center gap-2">
+<span class="material-symbols-outlined text-navy-deep">corporate_fare</span>
+          Tabla de Baremos Institucionales
+        </span>
+<button class="text-secondary hover:text-navy-deep" onclick="document.getElementById('volumenDialog').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-2 font-body-sm text-body-sm">
+<div class="p-3 rounded-lg bg-surface-subtle flex justify-between items-center">
+<div>
+<div class="font-bold text-navy-deep">Tramo I: Redes Locales</div>
+<div class="text-secondary">Volumen $2,500 - $10,000 USD</div>
+</div>
+<span class="font-headline-sm text-headline-sm text-clinical-red font-bold">12% OFF</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-subtle flex justify-between items-center">
+<div>
+<div class="font-bold text-navy-deep">Tramo II: Redes Hospitalarias</div>
+<div class="text-secondary">Volumen $10,001 - $50,000 USD</div>
+</div>
+<span class="font-headline-sm text-headline-sm text-clinical-red font-bold">24% OFF</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-subtle flex justify-between items-center">
+<div>
+<div class="font-bold text-navy-deep">Tramo III: Licitaciones Estatales</div>
+<div class="text-secondary">Volumen superior a $50,000 USD</div>
+</div>
+<span class="font-headline-sm text-headline-sm text-clinical-red font-bold">34% OFF</span>
+</div>
+</div>
+<div class="flex justify-end pt-space-xs">
+<button class="px-5 py-2.5 rounded-xl bg-navy-deep text-on-primary font-label-md text-label-md font-semibold" onclick="document.getElementById('volumenDialog').classList.add('hidden')" type="button">
+          Entendido, Volver a la Tienda
+        </button>
+</div>
+</div>
+</div>
+<!-- Micro Toast Notification for Add to Cart -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none bg-navy-deep text-on-primary px-4 py-3 rounded-xl shadow-xl flex items-center gap-3" id="toastNotification">
+<span class="material-symbols-outlined text-clinical-red" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<div class="font-label-md text-label-md font-bold" id="toastTitle">Producto añadido</div>
+<div class="font-body-sm text-body-sm text-powder-blue" id="toastSub">Añadido a la orden hospitalaria</div>
+</div>
+</div>
+<!-- Inline Client-side Behavior Script for Filters and Interactions -->
+<script>
+    // Tab category filtering
+    function filterCategory(cat, btn) {
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.remove('bg-surface-container-lowest', 'text-navy-deep', 'shadow-sm');
+        b.classList.add('text-on-surface-variant');
+      });
+      btn.classList.add('bg-surface-container-lowest', 'text-navy-deep', 'shadow-sm');
+      btn.classList.remove('text-on-surface-variant');
+
+      const cards = document.querySelectorAll('.product-card');
+      cards.forEach(card => {
+        if (cat === 'todos' || card.dataset.cat === cat) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Search query filter
+    function handleSearch(query) {
+      const q = query.toLowerCase().trim();
+      const cards = document.querySelectorAll('.product-card');
+      cards.forEach(card => {
+        const title = card.dataset.title.toLowerCase();
+        if (title.includes(q)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Price range filter
+    function handlePriceRange(val) {
+      document.getElementById('priceDisplay').textContent = 'Hasta $' + Number(val).toLocaleString();
+      const cards = document.querySelectorAll('.product-card');
+      cards.forEach(card => {
+        const price = Number(card.dataset.price);
+        if (price <= Number(val)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Quantity adjuster for cards
+    function adjustQty(btn, delta) {
+      const parent = btn.parentElement;
+      const countEl = parent.querySelector('span');
+      let val = parseInt(countEl.textContent, 10) + delta;
+      if (val < 1) val = 1;
+      countEl.textContent = val;
+    }
+
+    // Toast and Cart interaction
+    function addToCart(title, price) {
+      const toast = document.getElementById('toastNotification');
+      document.getElementById('toastTitle').textContent = title;
+      document.getElementById('toastSub').textContent = '$' + price.toLocaleString() + ' USD • Sumado a solicitud';
+      
+      toast.classList.remove('translate-y-32', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.add('translate-y-32', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3500);
+    }
+
+    // Reset filters
+    function resetFilters() {
+      document.getElementById('searchInput').value = '';
+      document.getElementById('priceRange').value = 4500;
+      document.getElementById('priceDisplay').textContent = 'Hasta $4,500';
+      document.getElementById('specialtySelect').value = 'todas';
+      const cards = document.querySelectorAll('.product-card');
+      cards.forEach(card => card.classList.remove('hidden'));
+    }
+
+    // Emergency order execution
+    function confirmEmergencyOrder() {
+      document.getElementById('emergencyDialog').classList.add('hidden');
+      addToCart('Solicitud de Emergencia (Despacho Prioritario UCI)', 0);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface mt-space-xl py-space-xl"><div class="max-w-7xl mx-auto px-margin-lg flex flex-col gap-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter"><div class="flex flex-col gap-space-xs"><span class="material-symbols-outlined text-primary text-2xl">verified_user</span><span class="font-headline-sm text-headline-sm text-primary">Garantía ISO 13485</span><span class="font-body-sm text-body-sm text-on-surface-variant">Equipamiento certificado y con trazabilidad sanitaria total.</span></div><div class="flex flex-col gap-space-xs"><span class="material-symbols-outlined text-primary text-2xl">local_shipping</span><span class="font-headline-sm text-headline-sm text-primary">Despacho Hospitalario</span><span class="font-body-sm text-body-sm text-on-surface-variant">Entregas en el día con cadena de frío garantizada.</span></div><div class="flex flex-col gap-space-xs"><span class="material-symbols-outlined text-primary text-2xl">support_agent</span><span class="font-headline-sm text-headline-sm text-primary">Soporte Clínico 24/7</span><span class="font-body-sm text-body-sm text-on-surface-variant">Asistencia técnica en equipamiento por biomédicos.</span></div><div class="flex flex-col gap-space-xs"><span class="material-symbols-outlined text-primary text-2xl">inventory</span><span class="font-headline-sm text-headline-sm text-primary">Stock en Tiempo Real</span><span class="font-body-sm text-body-sm text-on-surface-variant">Disponibilidad inmediata para licitaciones y compras.</span></div></div><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter pt-space-lg"><div class="md:col-span-4 flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><img alt="MediSupply Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyYDrV7P95A5AcWvC5ZWrDThIwhicbr4MyFBFg8t9ZYJx0rjRUO2M4iY5565liaOUAS88xlIOVKthSryw4rCzizuyErB7HDA_-2AriNYsi7owJARTXtWAhyrjAnnJ5NqiS4V1pHN_srpy6pyV7E_KwFJ8tZsXcVbUElZweVZ5Fzmd_bxM2fRHfIsZD7zRTjQ3vrXxterQMOVc0o1mKRTEkxkQOsSnYfy_2fKn4cVzh8g5hGvf0c5s6"/><span class="font-headline-md text-headline-md text-primary font-bold">MediSupply</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Plataforma B2B y B2C especializada en suministros quirúrgicos, tecnología médica y bioseguridad para entidades de salud.</p></div><div class="md:col-span-2 flex flex-col gap-space-xs"><span class="font-label-md text-label-md text-primary uppercase font-bold">Catálogo</span><span class="font-body-sm text-body-sm text-on-surface-variant">Diagnóstico</span><span class="font-body-sm text-body-sm text-on-surface-variant">Quirúrgico</span><span class="font-body-sm text-body-sm text-on-surface-variant">Bioseguridad</span><span class="font-body-sm text-body-sm text-on-surface-variant">Urgencias</span></div><div class="md:col-span-2 flex flex-col gap-space-xs"><span class="font-label-md text-label-md text-primary uppercase font-bold">Cumplimiento</span><span class="font-body-sm text-body-sm text-on-surface-variant">Certificación CE</span><span class="font-body-sm text-body-sm text-on-surface-variant">Normativa FDA</span><span class="font-body-sm text-body-sm text-on-surface-variant">Fichas Técnicas</span><span class="font-body-sm text-body-sm text-on-surface-variant">Farmacovigilancia</span></div><div class="md:col-span-4 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-primary uppercase font-bold">Boletín Biomédico</span><span class="font-body-sm text-body-sm text-on-surface-variant">Reciba actualizaciones de lotes, nuevos dispositivos y normativas sanitarias.</span><div class="flex items-center gap-space-xs"><div class="bg-surface-container-lowest px-3 py-1.5 rounded-lg flex-1 shadow-[0_1px_4px_rgba(43,52,103,0.05)]"><span class="font-body-sm text-body-sm text-on-surface-variant">correo@institucion.med</span></div><button class="bg-primary text-on-primary font-label-md text-label-md px-3 py-1.5 rounded-lg hover:bg-primary-container hover:text-on-primary-container transition-colors" type="button">Suscribir</button></div></div></div><div class="flex flex-col md:flex-row items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-space-md"><p>© 2024 MediSupply Healthcare Technologies. Todos los derechos reservados.</p><div class="flex items-center gap-space-md"><span>Privacidad Clínica</span><span>Términos de Compra</span><span>Trazabilidad INVIMA/ISP</span></div></div></div></footer></body></html>

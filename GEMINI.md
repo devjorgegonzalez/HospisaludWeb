@@ -94,7 +94,11 @@ El objetivo de la plataforma web es comercializar productos farmacéuticos y de 
 
 ### 3.1 Stack de Desarrollo
 * **Framework:** Next.js (App Router, TypeScript en modo estricto).
-* **Componentes UI:** Shadcn UI + Tailwind CSS.
+* **Diseño Responsivo Obligatorio (Mobile-First):** Toda la plataforma (catálogo de clientes, carrito, mapa interactivo de checkout, vistas de perfil y tableros operativos de despacho y administración) debe ser 100% responsiva, adaptándose con total fluidez y ergonomía a teléfonos móviles (smartphones), tablets y pantallas de escritorio mediante Tailwind CSS y componentes responsivos de Shadcn UI.
+* **Sistema de Diseño UI ("Clinical Precision"):** Inspirado en la micro-precisión de Shadcn UI y documentado en `design/DESIGN.md`:
+  * **Paleta Principal:** Deep Navy (`#2B3467`) como color primario de autoridad y acciones transaccionales; Powder Sky Blue (`#BAD7E9`) para acentos higiénicos y contenedores secundarios; Clinical Coral (`#EB455F`) para alertas de urgencia y medicamentos de venta controlada; Surface Ivory (`#FCFFE7`) para paneles de notificación clínica; fondos limpios en `#F8F9FF` y `#FFFFFF`.
+  * **Tipografía:** *Plus Jakarta Sans* para encabezados y displays; *Inter* para textos de cuerpo y formularios; *JetBrains Mono* para códigos de barras, tasas BCV, batch IDs y métricas.
+  * **Elevación y Geometría:** Micro-bordes limpios de 1px (`#E2E8F0`), radios sutiles (4px a 8px) y sombras de elevación difusas y controladas.
 * **Tablas de Datos:** TanStack Table (para paneles administrativos y catálogo).
 * **ORM:** TypeORM con migraciones versionadas obligatorias (`synchronize: false`).
 * **Base de Datos:** PostgreSQL.
